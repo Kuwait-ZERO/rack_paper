@@ -62,7 +62,7 @@ class HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // Player 1
-                Column(
+                Flexible(child:  Column(
                   children: [
                     Container(
                       width: 200,
@@ -74,9 +74,9 @@ class HomeScreenState extends State<HomeScreen> {
                     Text('Player 1'),
                   ],
                 ),
-
+                ),
                 // Player 2
-                Column(
+               Flexible(child:  Column(
                   children: [
                     Container(
                       width: 200,
@@ -87,7 +87,7 @@ class HomeScreenState extends State<HomeScreen> {
                     Container(height: 8),
                     Text('Player 2'),
                   ],
-                ),
+                )),
               ],
             ),
             Container(height: 30),
